@@ -1,12 +1,14 @@
-import fruit from "../dummy-data";
+import fruitList from "../dummy-data";
+import Fruit from "../components/fruit"
+//import api from "../utils/API"
+
+import React from "react";
 
 export default function Home() {
-  return (
-    <>
-      <h1>HelloWord</h1>
-      <ul>
-        {fruit.map(f => (<li key={f}>{f}</li>))}
-      </ul>
-    </>
-  )
-}
+   return (
+     <>
+       <h1>Fruit</h1>
+       <Fruit></Fruit>
+      </>
+   )
+ }
